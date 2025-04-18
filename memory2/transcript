@@ -1,0 +1,632 @@
+# //  Questa Sim-64
+# //  Version 10.6b linux_x86_64 May 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vsim work.tb_top
+# vsim work.tb_top 
+# Start time: 10:57:30 on Mar 13,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.inf(fast)
+# Loading /cadtools/mentor/Questa_10.6b/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+add wave -r sim:/tb_top/inf1/*
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test wr_rd_test...
+# sb built
+# ----------------------------------------------------------------
+# Name                         Type                    Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top                 wr_rd_test              -     @471 
+#   env                        mem_env                 -     @478 
+#     mem_agnt                 mem_agent               -     @489 
+#       driver                 mem_driver              -     @523 
+#         rsp_port             uvm_analysis_port       -     @538 
+#         seq_item_port        uvm_seq_item_pull_port  -     @530 
+#       monitor                mem_monitor             -     @504 
+#         item_collected_port  uvm_analysis_port       -     @515 
+#       sequencer              mem_sequencer           -     @546 
+#         rsp_export           uvm_analysis_export     -     @553 
+#         seq_item_export      uvm_seq_item_pull_imp   -     @647 
+#         arbitration_queue    array                   0     -    
+#         lock_queue           array                   0     -    
+#         num_last_reqs        integral                32    'd1  
+#         num_last_rsps        integral                32    'd1  
+#     scb                      mem_scoreboard          -     @496 
+#       item_collected_export  uvm_analysis_imp        -     @662 
+# ----------------------------------------------------------------
+# UVM_INFO driver.sv(27) @ 0: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# REEEEESET
+# UVM_INFO scoreboard.sv(91) @ 5: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 15: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 15: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 6
+# UVM_INFO scoreboard.sv(88) @ 15: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 179
+# UVM_INFO scoreboard.sv(89) @ 15: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 15: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 15: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 25: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 25: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 6
+# UVM_INFO scoreboard.sv(88) @ 25: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 179
+# UVM_INFO scoreboard.sv(89) @ 25: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 25: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 45: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 45: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 2
+# UVM_INFO scoreboard.sv(73) @ 45: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 45: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 45: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 45: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 55: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 55: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 2
+# UVM_INFO scoreboard.sv(73) @ 55: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 55: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 55: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 65: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 65: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 3
+# UVM_INFO scoreboard.sv(88) @ 65: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 113
+# UVM_INFO scoreboard.sv(89) @ 65: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 65: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 113, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 65: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# REEEEESET
+# UVM_INFO scoreboard.sv(91) @ 75: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 95: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 95: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 0
+# UVM_INFO scoreboard.sv(73) @ 95: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 95: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 95: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 95: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 105: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 105: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 0
+# UVM_INFO scoreboard.sv(73) @ 105: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 105: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 105: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 115: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 115: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 4
+# UVM_INFO scoreboard.sv(88) @ 115: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 147
+# UVM_INFO scoreboard.sv(89) @ 115: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 115: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 115: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 125: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 125: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 4
+# UVM_INFO scoreboard.sv(88) @ 125: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 147
+# UVM_INFO scoreboard.sv(89) @ 125: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 125: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 145: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 145: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 6
+# UVM_INFO scoreboard.sv(73) @ 145: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 145: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 145: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 145: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 155: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 155: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 6
+# UVM_INFO scoreboard.sv(73) @ 155: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 155: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 155: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 0, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 165: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 165: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 3
+# UVM_INFO scoreboard.sv(88) @ 165: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 52
+# UVM_INFO scoreboard.sv(89) @ 165: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 165: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 165: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 175: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 175: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 3
+# UVM_INFO scoreboard.sv(88) @ 175: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 52
+# UVM_INFO scoreboard.sv(89) @ 175: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 175: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 195: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 195: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 11
+# UVM_INFO scoreboard.sv(73) @ 195: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 195: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 195: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO driver.sv(27) @ 195: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 205: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 205: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 11
+# UVM_INFO scoreboard.sv(73) @ 205: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 205: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 205: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 215: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 215: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 13
+# UVM_INFO scoreboard.sv(88) @ 215: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 66
+# UVM_INFO scoreboard.sv(89) @ 215: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 215: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 215: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 225: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 225: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 13
+# UVM_INFO scoreboard.sv(88) @ 225: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 66
+# UVM_INFO scoreboard.sv(89) @ 225: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 225: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 245: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 245: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 12
+# UVM_INFO scoreboard.sv(73) @ 245: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 245: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 245: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 245: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 255: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 255: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 12
+# UVM_INFO scoreboard.sv(73) @ 255: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 255: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 255: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 265: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 265: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 8
+# UVM_INFO scoreboard.sv(88) @ 265: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 134
+# UVM_INFO scoreboard.sv(89) @ 265: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 265: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 265: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 275: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 275: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 8
+# UVM_INFO scoreboard.sv(88) @ 275: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 134
+# UVM_INFO scoreboard.sv(89) @ 275: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 275: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 295: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 295: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 5
+# UVM_INFO scoreboard.sv(73) @ 295: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 295: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 295: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 295: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 305: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 305: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 5
+# UVM_INFO scoreboard.sv(73) @ 305: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 305: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 305: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 0, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 315: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 315: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 12
+# UVM_INFO scoreboard.sv(88) @ 315: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 194
+# UVM_INFO scoreboard.sv(89) @ 315: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 315: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 315: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 325: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 325: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 12
+# UVM_INFO scoreboard.sv(88) @ 325: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 194
+# UVM_INFO scoreboard.sv(89) @ 325: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 325: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 345: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 345: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 13
+# UVM_INFO scoreboard.sv(73) @ 345: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 66 Actual Data: 66
+# UVM_INFO scoreboard.sv(74) @ 345: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 345: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 345: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 355: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 355: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 13
+# UVM_INFO scoreboard.sv(73) @ 355: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 66 Actual Data: 66
+# UVM_INFO scoreboard.sv(74) @ 355: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 355: uvm_test_top.env.scb [SB] sc mem : '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# '{0, 0, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 365: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 365: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 1
+# UVM_INFO scoreboard.sv(88) @ 365: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 128
+# UVM_INFO scoreboard.sv(89) @ 365: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 365: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 365: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 375: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 375: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 1
+# UVM_INFO scoreboard.sv(88) @ 375: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 128
+# UVM_INFO scoreboard.sv(89) @ 375: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 375: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 395: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 395: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 7
+# UVM_INFO scoreboard.sv(73) @ 395: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 395: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 395: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO driver.sv(27) @ 395: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(71) @ 405: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 405: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 7
+# UVM_INFO scoreboard.sv(73) @ 405: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 405: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 405: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 0, 0}
+# UVM_INFO scoreboard.sv(86) @ 415: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 415: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 14
+# UVM_INFO scoreboard.sv(88) @ 415: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 145
+# UVM_INFO scoreboard.sv(89) @ 415: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 415: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 415: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 425: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 425: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 14
+# UVM_INFO scoreboard.sv(88) @ 425: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 145
+# UVM_INFO scoreboard.sv(89) @ 425: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 425: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 445: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 445: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 3
+# UVM_INFO scoreboard.sv(73) @ 445: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 52 Actual Data: 52
+# UVM_INFO scoreboard.sv(74) @ 445: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 445: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 445: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 455: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 455: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 3
+# UVM_INFO scoreboard.sv(73) @ 455: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 52 Actual Data: 52
+# UVM_INFO scoreboard.sv(74) @ 455: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 455: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 134, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 465: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 465: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 8
+# UVM_INFO scoreboard.sv(88) @ 465: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 81
+# UVM_INFO scoreboard.sv(89) @ 465: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 465: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 465: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 475: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 475: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 8
+# UVM_INFO scoreboard.sv(88) @ 475: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 81
+# UVM_INFO scoreboard.sv(89) @ 475: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 475: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 495: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 495: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 13
+# UVM_INFO scoreboard.sv(73) @ 495: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 66 Actual Data: 66
+# UVM_INFO scoreboard.sv(74) @ 495: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 495: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 495: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 505: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 505: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 13
+# UVM_INFO scoreboard.sv(73) @ 505: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 66 Actual Data: 66
+# UVM_INFO scoreboard.sv(74) @ 505: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 505: uvm_test_top.env.scb [SB] sc mem : '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{0, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 515: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 515: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 0
+# UVM_INFO scoreboard.sv(88) @ 515: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 47
+# UVM_INFO scoreboard.sv(89) @ 515: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 515: uvm_test_top.env.scb [SB] sc mem : '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 515: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 525: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 525: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 0
+# UVM_INFO scoreboard.sv(88) @ 525: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 47
+# UVM_INFO scoreboard.sv(89) @ 525: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 525: uvm_test_top.env.scb [SB] sc mem : '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 545: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 545: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 8
+# UVM_INFO scoreboard.sv(73) @ 545: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 81 Actual Data: 81
+# UVM_INFO scoreboard.sv(74) @ 545: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 545: uvm_test_top.env.scb [SB] sc mem : '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 545: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 555: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 555: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 8
+# UVM_INFO scoreboard.sv(73) @ 555: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 81 Actual Data: 81
+# UVM_INFO scoreboard.sv(74) @ 555: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 555: uvm_test_top.env.scb [SB] sc mem : '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{47, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 565: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 565: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 0
+# UVM_INFO scoreboard.sv(88) @ 565: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 221
+# UVM_INFO scoreboard.sv(89) @ 565: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 565: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 565: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 575: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 575: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 0
+# UVM_INFO scoreboard.sv(88) @ 575: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 221
+# UVM_INFO scoreboard.sv(89) @ 575: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 575: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 595: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 595: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 1
+# UVM_INFO scoreboard.sv(73) @ 595: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 128 Actual Data: 128
+# UVM_INFO scoreboard.sv(74) @ 595: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 595: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 595: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 605: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 605: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 1
+# UVM_INFO scoreboard.sv(73) @ 605: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 128 Actual Data: 128
+# UVM_INFO scoreboard.sv(74) @ 605: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 605: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 0, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 615: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 615: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 10
+# UVM_INFO scoreboard.sv(88) @ 615: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 53
+# UVM_INFO scoreboard.sv(89) @ 615: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 615: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 615: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 625: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 625: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 10
+# UVM_INFO scoreboard.sv(88) @ 625: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 53
+# UVM_INFO scoreboard.sv(89) @ 625: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 625: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 645: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 645: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 6
+# UVM_INFO scoreboard.sv(73) @ 645: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 645: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 645: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 645: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 655: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 655: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 6
+# UVM_INFO scoreboard.sv(73) @ 655: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 655: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 655: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 0, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 665: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 665: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 9
+# UVM_INFO scoreboard.sv(88) @ 665: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 199
+# UVM_INFO scoreboard.sv(89) @ 665: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 665: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 665: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 675: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 675: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 9
+# UVM_INFO scoreboard.sv(88) @ 675: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 199
+# UVM_INFO scoreboard.sv(89) @ 675: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 675: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 695: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 695: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 8
+# UVM_INFO scoreboard.sv(73) @ 695: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 81 Actual Data: 81
+# UVM_INFO scoreboard.sv(74) @ 695: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 695: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 695: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 705: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 705: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 8
+# UVM_INFO scoreboard.sv(73) @ 705: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 81 Actual Data: 81
+# UVM_INFO scoreboard.sv(74) @ 705: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 705: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 0, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 715: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 715: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 2
+# UVM_INFO scoreboard.sv(88) @ 715: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 247
+# UVM_INFO scoreboard.sv(89) @ 715: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 715: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 715: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 725: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 725: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 2
+# UVM_INFO scoreboard.sv(88) @ 725: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 247
+# UVM_INFO scoreboard.sv(89) @ 725: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 725: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 745: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 745: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 15
+# UVM_INFO scoreboard.sv(73) @ 745: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 745: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 745: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 745: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 755: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 755: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 15
+# UVM_INFO scoreboard.sv(73) @ 755: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 755: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 755: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 247, 52, 147, 0, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 765: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 765: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 5
+# UVM_INFO scoreboard.sv(88) @ 765: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 123
+# UVM_INFO scoreboard.sv(89) @ 765: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 765: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 765: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 775: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 775: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 5
+# UVM_INFO scoreboard.sv(88) @ 775: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 123
+# UVM_INFO scoreboard.sv(89) @ 775: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 775: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 795: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 795: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 14
+# UVM_INFO scoreboard.sv(73) @ 795: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 145 Actual Data: 145
+# UVM_INFO scoreboard.sv(74) @ 795: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 795: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 795: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 805: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 805: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 14
+# UVM_INFO scoreboard.sv(73) @ 805: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 145 Actual Data: 145
+# UVM_INFO scoreboard.sv(74) @ 805: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 805: uvm_test_top.env.scb [SB] sc mem : '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{221, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 815: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 815: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 0
+# UVM_INFO scoreboard.sv(88) @ 815: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 147
+# UVM_INFO scoreboard.sv(89) @ 815: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 815: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 815: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 825: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 825: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 0
+# UVM_INFO scoreboard.sv(88) @ 825: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 147
+# UVM_INFO scoreboard.sv(89) @ 825: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 825: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 845: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 845: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 6
+# UVM_INFO scoreboard.sv(73) @ 845: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 845: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 845: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 845: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 855: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 855: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 6
+# UVM_INFO scoreboard.sv(73) @ 855: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 855: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 855: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 52, 147, 123, 0, 0, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 865: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 865: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 7
+# UVM_INFO scoreboard.sv(88) @ 865: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 161
+# UVM_INFO scoreboard.sv(89) @ 865: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 865: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 865: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 875: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 875: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 7
+# UVM_INFO scoreboard.sv(88) @ 875: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 161
+# UVM_INFO scoreboard.sv(89) @ 875: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 875: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 895: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 895: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 10
+# UVM_INFO scoreboard.sv(73) @ 895: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 53 Actual Data: 53
+# UVM_INFO scoreboard.sv(74) @ 895: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 895: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 895: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 905: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 905: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 10
+# UVM_INFO scoreboard.sv(73) @ 905: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 53 Actual Data: 53
+# UVM_INFO scoreboard.sv(74) @ 905: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 905: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 52, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 915: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 915: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 3
+# UVM_INFO scoreboard.sv(88) @ 915: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 28
+# UVM_INFO scoreboard.sv(89) @ 915: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 915: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 915: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 925: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 925: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 3
+# UVM_INFO scoreboard.sv(88) @ 925: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 28
+# UVM_INFO scoreboard.sv(89) @ 925: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 925: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 945: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 945: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 11
+# UVM_INFO scoreboard.sv(73) @ 945: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 945: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 945: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 945: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 0 , 1
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 955: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 955: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 11
+# UVM_INFO scoreboard.sv(73) @ 955: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 0 Actual Data: 0
+# UVM_INFO scoreboard.sv(74) @ 955: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 955: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 53, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 965: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 965: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 10
+# UVM_INFO scoreboard.sv(88) @ 965: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 248
+# UVM_INFO scoreboard.sv(89) @ 965: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 965: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 248, 0, 194, 66, 145, 0}
+# UVM_INFO driver.sv(27) @ 965: uvm_test_top.env.mem_agnt.driver [DRI] Enable: 1 , 0
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 248, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(86) @ 975: uvm_test_top.env.scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(87) @ 975: uvm_test_top.env.scb [mem_scoreboard] 	 wr_Addr = 10
+# UVM_INFO scoreboard.sv(88) @ 975: uvm_test_top.env.scb [mem_scoreboard] 	 wr_data = 248
+# UVM_INFO scoreboard.sv(89) @ 975: uvm_test_top.env.scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(91) @ 975: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 248, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 248, 0, 194, 66, 145, 0}
+# '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 248, 0, 194, 66, 145, 0}
+# UVM_INFO scoreboard.sv(71) @ 995: uvm_test_top.env.scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(72) @ 995: uvm_test_top.env.scb [mem_scoreboard] rd_Addr: 0
+# UVM_INFO scoreboard.sv(73) @ 995: uvm_test_top.env.scb [mem_scoreboard] Expected Data: 147 Actual Data: 147
+# UVM_INFO scoreboard.sv(74) @ 995: uvm_test_top.env.scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(91) @ 995: uvm_test_top.env.scb [SB] sc mem : '{147, 128, 247, 28, 147, 123, 0, 161, 81, 199, 248, 0, 194, 66, 145, 0}
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 995: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO monitor.sv(67) @ 995: uvm_test_top.env.mem_agnt.monitor [MEM_COV] Final Coverage: 91.67%
+# UVM_INFO basetest.sv(42) @ 995: uvm_test_top [wr_rd_test] ---------------------------------------
+# UVM_INFO basetest.sv(43) @ 995: uvm_test_top [wr_rd_test] ----           TEST PASS           ----
+# UVM_INFO basetest.sv(44) @ 995: uvm_test_top [wr_rd_test] ---------------------------------------
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  440
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRI]    40
+# [MEM_COV]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB]    80
+# [TEST_DONE]     1
+# [mem_scoreboard]   312
+# [wr_rd_test]     3
+# ** Note: $finish    : /cadtools/mentor/Questa_10.6b/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 995 ns  Iteration: 61  Instance: /tb_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /cadtools/mentor/Questa_10.6b/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 10:58:38 on Mar 13,2025, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0

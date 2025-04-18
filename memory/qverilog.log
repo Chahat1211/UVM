@@ -1,0 +1,182 @@
+Start time: 10:06:44 on Mar 17,2025
+qverilog tb.sv 
+** Note: (qverilog-2286) monitor.sv(2): Using implicit +incdir+/cadtools/mentor/Questa_10.6b/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package tb_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module memory
+-- Compiling interface mem_if
+-- Compiling interface mem_if
+-- Compiling module tbench_top
+
+Top level modules:
+	tbench_top
+# vsim tb_sv_unit tbench_top -c -do "run -all; quit -f" -appendlog -l qverilog.log -vopt 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.6b linux_x86_64 May 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.tb_sv_unit(fast)
+# Loading work.tbench_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.mem_if(fast)
+# Loading /cadtools/mentor/Questa_10.6b/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_wr_rd_test...
+# -----------------------------------------------------------------
+# Name                          Type                    Size  Value
+# -----------------------------------------------------------------
+# uvm_test_top                  mem_wr_rd_test          -     @471 
+#   env                         mem_env                 -     @478 
+#     mem_agnt                  mem_agent               -     @489 
+#       driver                  mem_driver              -     @523 
+#         rsp_port              uvm_analysis_port       -     @538 
+#         seq_item_port         uvm_seq_item_pull_port  -     @530 
+#       monitor                 mem_monitor             -     @504 
+#         items_collected_port  uvm_analysis_port       -     @515 
+#       sequencer               mem_sequencer           -     @546 
+#         rsp_export            uvm_analysis_export     -     @553 
+#         seq_item_export       uvm_seq_item_pull_imp   -     @647 
+#         arbitration_queue     array                   0     -    
+#         lock_queue            array                   0     -    
+#         num_last_reqs         integral                32    'd1  
+#         num_last_rsps         integral                32    'd1  
+#     mem_scb                   mem_scoreboard          -     @496 
+#       items_collected_export  uvm_analysis_imp        -     @662 
+# -----------------------------------------------------------------
+# UVM_INFO scoreboard.sv(35) @ 15: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 15: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 1
+# UVM_INFO scoreboard.sv(37) @ 15: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = 40
+# UVM_INFO scoreboard.sv(38) @ 15: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 35: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 35: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 2
+# UVM_INFO scoreboard.sv(37) @ 35: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = dc
+# UVM_INFO scoreboard.sv(38) @ 35: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 1
+# UVM_INFO scoreboard.sv(37) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = 56
+# UVM_INFO scoreboard.sv(38) @ 55: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 75: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 75: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 2
+# UVM_INFO scoreboard.sv(37) @ 75: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = 74
+# UVM_INFO scoreboard.sv(38) @ 75: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 95: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 95: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 2
+# UVM_INFO scoreboard.sv(37) @ 95: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = af
+# UVM_INFO scoreboard.sv(38) @ 95: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 115: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 115: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 3
+# UVM_INFO scoreboard.sv(37) @ 115: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = 6c
+# UVM_INFO scoreboard.sv(38) @ 115: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 135: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 135: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 3
+# UVM_INFO scoreboard.sv(37) @ 135: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = fd
+# UVM_INFO scoreboard.sv(38) @ 135: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 155: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 155: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 1
+# UVM_INFO scoreboard.sv(37) @ 155: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = 3b
+# UVM_INFO scoreboard.sv(38) @ 155: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 175: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 175: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 1
+# UVM_INFO scoreboard.sv(37) @ 175: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = 6d
+# UVM_INFO scoreboard.sv(38) @ 175: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(35) @ 195: uvm_test_top.env.mem_scb [mem_scoreboard] ---------:: WRITE DATA ::----------
+# UVM_INFO scoreboard.sv(36) @ 195: uvm_test_top.env.mem_scb [mem_scoreboard] 	 Addr = 0
+# UVM_INFO scoreboard.sv(37) @ 195: uvm_test_top.env.mem_scb [mem_scoreboard] 	 wdata = 30
+# UVM_INFO scoreboard.sv(38) @ 195: uvm_test_top.env.mem_scb [mem_scoreboard] ---------------------
+# UVM_INFO scoreboard.sv(42) @ 225: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 225: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 0
+# UVM_INFO scoreboard.sv(44) @ 225: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: 30 Actual Data: 30
+# UVM_INFO scoreboard.sv(45) @ 225: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 255: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 255: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 2
+# UVM_INFO scoreboard.sv(44) @ 255: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: af Actual Data: af
+# UVM_INFO scoreboard.sv(45) @ 255: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 285: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 285: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 3
+# UVM_INFO scoreboard.sv(44) @ 285: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: fd Actual Data: fd
+# UVM_INFO scoreboard.sv(45) @ 285: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 315: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 315: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 1
+# UVM_INFO scoreboard.sv(44) @ 315: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: 6d Actual Data: 6d
+# UVM_INFO scoreboard.sv(45) @ 315: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 345: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 345: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 2
+# UVM_INFO scoreboard.sv(44) @ 345: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: af Actual Data: af
+# UVM_INFO scoreboard.sv(45) @ 345: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 375: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 375: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 1
+# UVM_INFO scoreboard.sv(44) @ 375: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: 6d Actual Data: 6d
+# UVM_INFO scoreboard.sv(45) @ 375: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 405: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 405: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 2
+# UVM_INFO scoreboard.sv(44) @ 405: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: af Actual Data: af
+# UVM_INFO scoreboard.sv(45) @ 405: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 435: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 435: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 1
+# UVM_INFO scoreboard.sv(44) @ 435: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: 6d Actual Data: 6d
+# UVM_INFO scoreboard.sv(45) @ 435: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 465: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 465: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 0
+# UVM_INFO scoreboard.sv(44) @ 465: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: 30 Actual Data: 30
+# UVM_INFO scoreboard.sv(45) @ 465: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO scoreboard.sv(42) @ 495: uvm_test_top.env.mem_scb [mem_scoreboard] ------ :: READ DATA Match :: ------
+# UVM_INFO scoreboard.sv(43) @ 495: uvm_test_top.env.mem_scb [mem_scoreboard] Addr: 1
+# UVM_INFO scoreboard.sv(44) @ 495: uvm_test_top.env.mem_scb [mem_scoreboard] Expected Data: 6d Actual Data: 6d
+# UVM_INFO scoreboard.sv(45) @ 495: uvm_test_top.env.mem_scb [mem_scoreboard] ------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 545: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO basetest.sv(40) @ 545: uvm_test_top [mem_wr_rd_test] ---------------------------------------
+# UVM_INFO basetest.sv(41) @ 545: uvm_test_top [mem_wr_rd_test] ----           TEST PASS           ----
+# UVM_INFO basetest.sv(42) @ 545: uvm_test_top [mem_wr_rd_test] ---------------------------------------
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   87
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [mem_scoreboard]    80
+# [mem_wr_rd_test]     3
+# ** Note: $finish    : /cadtools/mentor/Questa_10.6b/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 545 ns  Iteration: 53  Instance: /tbench_top
+# End time: 10:06:47 on Mar 17,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
